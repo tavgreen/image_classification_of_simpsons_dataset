@@ -75,7 +75,7 @@ model.add(Dropout(0.5))
 model.add(Dense(num_class, activation='softmax'))
 ```
 
-- Running Model
+- Running Model (Keras)
 ```python
 model.compile(loss='categorical_crossentropy',optimizer='adam',metrics=['accuracy'])
 model.fit(x_train, y_train, batch_size=10, nb_epoch=10, verbose=1, validation_data=(x_test, y_test))
