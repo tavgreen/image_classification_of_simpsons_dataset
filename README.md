@@ -83,7 +83,7 @@ loss, acc = model.evaluate(x_test, y_test, verbose=0)
 print('\nTesting loss: {}, acc: {}\n'.format(loss, acc))
 ```
 ## Result ##
-- 5 epochs: 55 %
+- 5 epochs: 63 %
 - 10 epochs: ? %
 - 100 epochs: ? %
 
