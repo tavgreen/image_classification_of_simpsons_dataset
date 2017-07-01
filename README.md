@@ -1,7 +1,7 @@
-# Simpson Image Dataset Classification #
+# Simpson Image Dataset Classification using Convolutional Neural Network (CNN) in Keras and Tensorflow #
 
 ## Description ##
-This project is about how to classify image character of Simpson dataset using Convolutional Neural Network Model in Keras and Tensorflow library. Dataset resource can be found in [Kaggle Simpsons Character](https://www.kaggle.com/alexattia/the-simpsons-characters-dataset). This project is developed by using [Python3.6](https://www.python.org/downloads/release/python-360/), [Tensorflow](http://tensorflow.org) or [Keras](http://keras.io). Based on dataset, there are 20 classes which consists of 400 - 2000 images per class. Each image dataset has different width and height size. In this project, i only use image that has height 120 pixels and width 180 pixels (uniform).     
+This project is about how to classify image character of Simpson dataset using one of most sophisticated deep learning algorithm: Convolutional Neural Network (CNN) Model in Keras and Tensorflow library. Dataset resource can be found in [Kaggle Simpsons Character](https://www.kaggle.com/alexattia/the-simpsons-characters-dataset). This project is developed by using [Python3.6](https://www.python.org/downloads/release/python-360/), [Tensorflow](http://tensorflow.org) or [Keras](http://keras.io). Based on dataset, there are 20 classes which consists of 400 - 2000 images per class. Each image dataset has different width and height size. In this project, i only use image that has height 120 pixels and width 180 pixels (uniform).     
 
 ## Methods ##
 has not completed yet
