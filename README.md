@@ -82,8 +82,27 @@ model.fit(x_train, y_train, batch_size=10, nb_epoch=10, verbose=1, validation_da
 loss, acc = model.evaluate(x_test, y_test, verbose=0)
 print('\nTesting loss: {}, acc: {}\n'.format(loss, acc))
 ```
+
 ## Result ##
 - 10 epochs: 63 %
+- 50 epochs: ? %
+
+## More Deeper Architecture ##
+you can modify above architecture to be more deeper and change optimizer to others like Stochastic Gradient Descent with momentum. The example of this code can produce > 80% testing accuracy:
+```python
+model = Sequential()
+model.add(Conv2D(32, kernel_size=(3, 3),padding='same',activation='relu',input_shape=input_shape))
+model.add(MaxPooling2D(pool_size=(2,2)))
+model.add(Conv2D(64, kernel_size=(3, 3),padding='same',activation='relu'))
+model.add(MaxPooling2D(pool_size=(2,2)))
+model.add(Conv2D(256, (3, 3),padding='same', activation='relu'))
+model.add(MaxPooling2D(pool_size=(2,2)))
+model.add(Dropout(0.2))
+model.add(Flatten())
+model.add(Dense(1024, activation='relu'))
+model.add(Dropout(0.5))
+model.add(Dense(num_class, activation='softmax'))
+```
 
 ## Future Works ##
 This projects can be extended by implementing recent convolutional neural network algorithm like:
